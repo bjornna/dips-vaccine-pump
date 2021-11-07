@@ -1,0 +1,27 @@
+{
+  "name": "dips-vaccine-pump",
+  "version": "1.0.0",
+  "description": "A service which collects vaccines from an openEHR server and sends it to the remin-receiver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openEHR",
+    "vaccine",
+    "ReMin"
+  ],
+  "author": "Bjørn Næss <bna@dips.no>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-cron": "^3.0.0",
+    "node-fetch": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^16.11.6",
+    "@types/node-cron": "^3.0.0",
+    "@types/node-fetch": "^2.0.0"
+  }
+}
