@@ -8,7 +8,7 @@ dotenv.config();
 let currentLatestCommitTime = new Date().toISOString();
 
 const ehrStoreUrl = process.env.EHRSTORE_LOCATION_URL;
-const reminReceiverUrl = process.env.REMIN_URL;
+const reminReceiverUrl = process.env.REMIN_RECEIVER_URL;
 
 if (ehrStoreUrl && reminReceiverUrl) {
     const appConf: AppConfig = {
@@ -32,4 +32,6 @@ if (ehrStoreUrl && reminReceiverUrl) {
 
 } else {
     console.error("You must set the attributes for EHRSTORE_LOCATION_URL and REMIN_URL to ENV");
+    console.log("EhrStoreUrl: " + ehrStoreUrl);
+    console.log("ReminUrl" + reminReceiverUrl);
 }
