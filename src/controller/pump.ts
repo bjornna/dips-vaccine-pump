@@ -4,7 +4,7 @@ import {QueryBuilder} from '../model/QueryBuilder';
 import {ResultSet} from '../model/ResultSet';
 import {vaccineToRemin} from './remin';
 import {postReminVaccines} from './reminReceiverClient';
-import {AppConfig} from '../index';
+import {AppConfig} from "../AppConfig";
 export async function pump(appConfig: AppConfig, date: string): Promise<null | string> {
     console.log("Pumping for vaccines after " + date);
     const t = new QueryBuilder(getAql(date));

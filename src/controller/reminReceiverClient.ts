@@ -1,5 +1,5 @@
 import {Remin} from '../model/remin';
-import {AppConfig} from '../index';
+import {AppConfig} from "../AppConfig";
 import fetch from 'node-fetch';
 export async function postReminVaccines(appConfg: AppConfig, remins: Remin[]) {
     for (const r of remins) {
