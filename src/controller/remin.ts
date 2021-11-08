@@ -23,7 +23,8 @@ function transformVaccine(v: Vaccine): Remin | null {
             vaccination_step: v.doseNumber,
             vaccine: {
                 name: v.vaccine,
-                manufacturer: v.manufacturer ? v.manufacturer : "UKJENT"
+                manufacturer: v.manufacturer ? v.manufacturer : "UKJENT", 
+                batch_id: v.batch_id? v.batch_id: 'UNKNOWN'
             }
 
         }

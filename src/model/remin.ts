@@ -51,6 +51,7 @@ export interface ReminSelfDeclaration {
 export interface ReminVaccine {
     manufacturer: string;
     name: string;
+    batch_id: string
 }
 
 // Converts JSON strings to/from your types
